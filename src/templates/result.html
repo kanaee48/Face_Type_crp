@@ -1,0 +1,10 @@
+<title>FaceType Predict App</title>
+{% if facetype %}
+    <h1>あなたの顔タイプは {{ facetype }} タイプです</h1>
+    <div>
+        <img src="{{ image }}">
+    </div>
+    <a href="./">トップへ戻る</a>
+{% else %}
+    <a href="./">トップへ戻る</a>
+{% endif %}
